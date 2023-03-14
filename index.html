@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>Document</title>
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+</head>
+<body>
+  <div class="container" id="container">
+    <h1>Generator</h1>
+    <div class="tool">
+      <div class="input-group"><label for="">All corner <span id="value">10px</span></label>
+      <input type="range" value="10" min="0" max="200" name="" id="input-range" class="input-range">
+
+       <div class="input-group"><label for="">border size <span id="border-value">3px</span></label>
+      <input type="range" value="3" min="0" max="20" name="" id="border-range" class="input-range">
+      <div class="input-group">
+        <label for="">border style</label>
+        <select id="borders">
+          <option>solid</option>
+          <option>dashed</option>
+          <option>double</option>
+          <option>dotted</option>
+          <option>groove</option>
+          <option>inset</option>
+          <option>outset</option>
+          <option>none</option>
+          <option>hidden</option>
+        </select>
+      </div>
+    
+      <div class="input-group">
+        <textarea id="code"></textarea>
+      </div>
+      <div class="input-group">
+        <button id="btn-copy">copy</button>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  
+
+<!-- script js -->
+  <script src="./script/script.js"></script>
+</body>
+</html>
